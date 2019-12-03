@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hades examples JNLP webstart -->
+<jnlp
+  spec="1.0+"
+  codebase="https://tams-www.informatik.uni-hamburg.de/applets/hades/webdemos/20-arithmetic/50-74181/"
+  href="SN74181.jnlp">
+
+  
+  <information>
+    <title>Hades webstart</title>
+    <vendor>Univ. Hamburg, Computer Science Dept.</vendor>
+    <homepage href="../../index.html"/>
+    <description>Hades webstart example: 'SN74181'
+    </description>
+    <description kind="short">Hades webstart</description>
+    <icon href="../../images/hades-logo-50x50.gif"/>
+    <offline-allowed/>
+  </information>
+
+  
+  <!-- requires a (self-) signed JAR-archive --> 
+  <security>
+    <all-permissions/>
+  </security>
+
+  
+  <resources>
+    <j2se version="1.4+" initial-heap-size="64m"  max-heap-size="512m" />
+    <jar href="https://tams-www.informatik.uni-hamburg.de/applets/hades/webdemos/classes/hades-signed.jar"/>
+
+  
+    <property name="jnlp.Hades.Editor.StartupFilename" value="https://tams-www.informatik.uni-hamburg.de/applets/hades/webdemos/20-arithmetic/50-74181/SN74181.hds"/>
+
+  </resources>
+
+  
+  <application-desc main-class="hades.gui.Editor"/>
+
+  
+</jnlp>
+
